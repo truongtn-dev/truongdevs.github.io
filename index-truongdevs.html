@@ -1,82 +1,208 @@
-
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TruongDevs | Blog chia sẻ lập trình & trải nghiệm sinh viên</title>
-  <link rel='canonical' href='https://www.truongdevs.com/' />
-  <meta name='description' content='TruongDevs là blog chia sẻ lập trình, BA, SQL, kỹ năng học tập, đề thi và trải nghiệm sinh viên CNTT' />
-  <meta name='keywords' content='TruongDevs, Blog cá nhân chia sẻ kiến thức lập trình (Java, HTML/CSS, React, SQL), Business Analyst (Use Case, Requirement, UML), kỹ năng học tập, mẹo học đại học, đề thi – ôn tập và trải nghiệm sinh viên thực tế. Nội dung được viết dễ hiểu, cập nhật thường xuyên, dành cho sinh viên ngành CNTT, người mới học lập trình và những ai yêu thích công nghệ, giáo dục và phát triển bản thân.' />
-  <meta name='rating' content='general' />
-  <meta name='application-name' content='TruongDevs' />
-  <meta name='apple-mobile-web-app-title' content='TruongDevs' />
-  <meta name='apple-mobile-web-app-capable' content='true' />
-  <meta name='theme-color' content='#482dff' />
-  <link rel='image_src' href='https://blogger.googleusercontent.com/img/b/.../thumbnail-truongdevs.com.png' />
-  <link rel='icon' type='image/png' sizes='192x192' href='https://blogger.googleusercontent.com/img/b/.../favicon-truongdevs.com.png' />
-  <link rel='apple-touch-icon' sizes='120x120' href='https://blogger.googleusercontent.com/img/b/.../favicon-truongdevs.com.png' />
+  <title>TruongDevs | Blog Lập Trình & Trải Nghiệm Sinh Viên CNTT</title>
+  <meta name="description" content="TruongDevs là blog chia sẻ lập trình, BA, SQL, kỹ năng học tập, đề thi và trải nghiệm sinh viên CNTT" />
+  <meta name="keywords" content="TruongDevs, Blog cá nhân chia sẻ kiến thức lập trình (Java, HTML/CSS, React, SQL), Business Analyst (Use Case, Requirement, UML), kỹ năng học tập, mẹo học đại học, đề thi – ôn tập và trải nghiệm sinh viên thực tế. Nội dung được viết dễ hiểu, cập nhật thường xuyên, dành cho sinh viên ngành CNTT, người mới học lập trình và những ai yêu thích công nghệ, giáo dục và phát triển bản thân." />
+  <meta name="author" content="TruongDevs" />
+  <meta name="rating" content="general" />
+  <meta name="application-name" content="TruongDevs" />
+  <meta name="apple-mobile-web-app-title" content="TruongDevs" />
+  <meta name="apple-mobile-web-app-capable" content="true" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://truongdevs.github.io/" />
+  <meta property="og:title" content="TruongDevs | Blog Lập Trình & Trải Nghiệm Sinh Viên CNTT" />
+  <meta property="og:description" content="TruongDevs là blog chia sẻ kiến thức lập trình (Java, HTML/CSS, React, SQL), Business Analyst, kỹ năng học tập, đề thi và trải nghiệm sinh viên CNTT." />
+  <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitke8ukcE8abE2bPBhQrE_8s79JRwiaHbfyUEwbJ89cfyMN0GKXHSMZtr0ZtuPI4DmqIKB5LaIJpfFpcpbFxSnqlx_08-gTJDcvZDviqhSIMZhNYS6mUls3ZjGPcsdWV-ZSvWzcYdnHsrC3rdl53n3ykHnsJb2FnTTMF9LBCS2O4ByT_mYvXIOs18XxlQA/w1280-h720-p-k-no-nu/thumbnail-truongdevs.com.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TruongDevs | Blog Lập Trình & Trải Nghiệm Sinh Viên CNTT" />
+  <meta name="twitter:description" content="TruongDevs là blog chia sẻ kiến thức lập trình (Java, HTML/CSS, React, SQL), Business Analyst, kỹ năng học tập, đề thi và trải nghiệm sinh viên CNTT." />
+  <meta name="twitter:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitke8ukcE8abE2bPBhQrE_8s79JRwiaHbfyUEwbJ89cfyMN0GKXHSMZtr0ZtuPI4DmqIKB5LaIJpfFpcpbFxSnqlx_08-gTJDcvZDviqhSIMZhNYS6mUls3ZjGPcsdWV-ZSvWzcYdnHsrC3rdl53n3ykHnsJb2FnTTMF9LBCS2O4ByT_mYvXIOs18XxlQA/w1280-h720-p-k-no-nu/thumbnail-truongdevs.com.png" />
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "TruongDevs",
+    "url": "https://truongdevs.github.io/",
+    "logo": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLG commentaire: Đây là favicon chính của trang web.qPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w144-h144-p-k-no-nu/favicon-truongdevs.com.png",
+    "description": "TruongDevs là blog chia sẻ kiến thức lập trình (Java, HTML/CSS, React, SQL), Business Analyst (Use Case, Requirement, UML), kỹ năng học tập, đề thi và trải nghiệm sinh viên CNTT thực tế.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "Customer Support",
+      "email": "contact@truongdevs.com",
+      "availableLanguage": ["English", "Vietnamese"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/truongdevs",
+      "https://x.com/truongdevs",
+      "https://www.instagram.com/truongdevs/"
+    ]
+  }
+  </script>
+
+  <!-- Favicons and Icons -->
+  <link rel="image_src" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitke8ukcE8abE2bPBhQrE_8s79JRwiaHbfyUEwbJ89cfyMN0GKXHSMZtr0ZtuPI4DmqIKB5LaIJpfFpcpbFxSnqlx_08-gTJDcvZDviqhSIMZhNYS6mUls3ZjGPcsdWV-ZSvWzcYdnHsrC3rdl53n3ykHnsJb2FnTTMF9LBCS2O4ByT_mYvXIOs18XxlQA/w1280-h720-p-k-no-nu/thumbnail-truongdevs.com.png" />
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w16-h16-p-k-no-nu/favicon-truongdevs.com.png" sizes="16x16" type="image/png" />
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w32-h32-p-k-no-nu/favicon-truongdevs.com.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w96-h96-p-k-no-nu/favicon-truongdevs.com.png" sizes="96x96" type="image/png" />
+  <link rel="icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w192-h192-p-k-no-nu/favicon-truongdevs.com.png" sizes="192x192" type="image/png" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w57-h57-p-k-no-nu/favicon-truongdevs.com.png" sizes="57x57" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w60-h60-p-k-no-nu/favicon-truongdevs.com.png" sizes="60x60" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w72-h72-p-k-no-nu/favicon-truongdevs.com.png" sizes="72x72" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w76-h76-p-k-no-nu/favicon-truongdevs.com.png" sizes="76x76" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w114-h114-p-k-no-nu/favicon-truongdevs.com.png" sizes="114x114" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w120-h120-p-k-no-nu/favicon-truongdevs.com.png" sizes="120x120" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w144-h144-p-k-no-nu/favicon-truongdevs.com.png" sizes="144x144" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w152-h152-p-k-no-nu/favicon-truongdevs.com.png" sizes="152x152" />
+  <link rel="apple-touch-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w180-h180-p-k-no-nu/favicon-truongdevs.com.png" sizes="180x180" />
+  <meta name="msapplication-TileImage" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-XzEnVDEedZ6apoJ6c9rhb0w4AZS0ktK4s7YaOBsSSHbEtYQEe91nmLGqPYrRg-KSIsss7e-iblJnzXEH9Xju6g8Bm0aKnECW_WWxz_340t9KOsuMC8nA-3Y65vEK2nNxumPAtyDwJurjqu_7fzJ1KNF9gfwLlitn2g-_JNfRU2wkyWQwSe1X6-GBwund/w144-h144-p-k-no-nu/favicon-truongdevs.com.png" />
+
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-    .nav-link { transition: color 0.3s ease, transform 0.2s ease; }
-    .nav-link:hover { color: #6366f1; transform: translateY(-2px); }
-    .card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-    .card:hover { transform: translateY(-6px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link {
+      transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .nav-link:hover {
+      color: #3b82f6;
+      transform: translateY(-2px);
+    }
+
+    .post-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .post-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .back-to-top {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-to-top:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
   </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-indigo-600 text-white text-center py-16">
-    <h1 class="text-4xl font-bold mb-2">TruongDevs</h1>
-    <p class="text-lg max-w-xl mx-auto">Blog chia sẻ kiến thức lập trình, Business Analyst, kỹ năng học tập và trải nghiệm sinh viên ngành CNTT</p>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-blue-900 text-white text-center py-16">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">TruongDevs</h1>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto opacity-90">Chia sẻ kiến thức lập trình, BA, SQL, kỹ năng học tập và trải nghiệm sinh viên CNTT</p>
   </header>
 
-  <nav class="bg-white shadow sticky top-0 z-50 py-3">
-    <div class="max-w-6xl mx-auto flex justify-center space-x-6">
-      <a href="#about" class="nav-link font-medium text-gray-700">Giới thiệu</a>
-      <a href="#services" class="nav-link font-medium text-gray-700">Nội dung chính</a>
-      <a href="#contact" class="nav-link font-medium text-gray-700">Liên hệ</a>
+  <nav class="bg-white shadow sticky top-0 z-50 py-4">
+    <div class="max-w-6xl mx-auto flex justify-center space-x-8">
+      <a href="#about" class="nav-link text-gray-700 font-medium">Giới Thiệu</a>
+      <a href="#categories" class="nav-link text-gray-700 font-medium">Chủ Đề</a>
+      <a href="#links" class="nav-link text-gray-700 font-medium">Liên Kết</a>
+      <a href="#contact" class="nav-link text-gray-700 font-medium">Liên Hệ</a>
+      <a href="#socials" class="nav-link text-gray-700 font-medium">Kết Nối</a>
     </div>
   </nav>
 
-  <main class="max-w-5xl mx-auto my-12 px-6">
-    <section id="about" class="mb-16">
-      <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Giới thiệu</h2>
-      <p class="text-lg mb-3">TruongDevs là blog cá nhân được tạo ra với mục tiêu chia sẻ các kiến thức thực tế về lập trình (Java, HTML/CSS, React, SQL), Business Analyst (UML, Use Case, Requirement...), cùng các kỹ năng mềm, mẹo học đại học và trải nghiệm thật từ cuộc sống sinh viên ngành CNTT.</p>
-      <p class="text-lg">Blog được viết với văn phong gần gũi, dễ hiểu, dành cho sinh viên công nghệ, người mới học lập trình hoặc bất cứ ai yêu thích công nghệ và giáo dục.</p>
+  <main class="max-w-6xl mx-auto my-12 px-6 bg-white rounded-xl shadow-lg">
+    <section id="about" class="py-12">
+      <h2 class="text-3xl font-semibold text-blue-900 border-b-2 border-gray-200 pb-3 mb-6">Giới Thiệu</h2>
+      <p class="text-lg mb-4"><strong>TruongDevs</strong> là blog cá nhân dành cho sinh viên CNTT, người mới học lập trình và những ai đam mê công nghệ, giáo dục, và phát triển bản thân. Được thành lập để chia sẻ kiến thức thực tế, dễ hiểu về lập trình (Java, HTML/CSS, React, SQL), Business Analyst (Use Case, Requirement, UML), kỹ năng học tập, mẹo học đại học, đề thi – ôn tập, và những trải nghiệm sinh viên chân thực.</p>
+      <p class="text-lg mb-4">Mục tiêu của chúng tôi là cung cấp nội dung chất lượng, cập nhật thường xuyên, giúp bạn nắm bắt kiến thức công nghệ một cách dễ dàng và áp dụng hiệu quả vào học tập cũng như công việc.</p>
+      <p class="text-lg">Ngoài ra, TruongDevs còn chia sẻ các dự án mã nguồn mở trên GitHub, tài liệu ôn thi, và các mẹo thực tiễn để hỗ trợ hành trình học tập và phát triển của bạn trong ngành CNTT.</p>
     </section>
 
-    <section id="services" class="mb-16">
-      <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Nội dung chính</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div class="card bg-white p-5 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Lập trình & SQL</h3>
-          <p>Hướng dẫn Java, HTML/CSS, React, SQL cơ bản đến nâng cao, có ví dụ thực tế.</p>
+    <section id="categories" class="py-12">
+      <h2 class="text-3xl font-semibold text-blue-900 border-b-2 border-gray-200 pb-3 mb-6">Chủ Đề</h2>
+      <p class="text-lg mb-6">Khám phá các chủ đề chính trên TruongDevs:</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="post-card bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Lập Trình</h3>
+          <p>Hướng dẫn chi tiết về Java, HTML/CSS, React, SQL, từ cơ bản đến nâng cao, kèm ví dụ thực tế và dự án mẫu.</p>
         </div>
-        <div class="card bg-white p-5 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Business Analyst</h3>
-          <p>Chia sẻ Use Case, Requirement, phân tích nghiệp vụ, kỹ năng BA dành cho sinh viên.</p>
+        <div class="post-card bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Business Analyst</h3>
+          <p>Chia sẻ kiến thức về Use Case, Requirement, UML, và các kỹ năng phân tích nghiệp vụ cần thiết cho BA.</p>
         </div>
-        <div class="card bg-white p-5 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Kỹ năng học tập</h3>
-          <p>Mẹo ôn tập, ghi nhớ, học nhanh, làm việc nhóm, thi cử hiệu quả cho sinh viên.</p>
+        <div class="post-card bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Kỹ Năng Học Tập</h3>
+          <p>Mẹo học đại học hiệu quả, quản lý thời gian, và các kỹ năng mềm giúp sinh viên CNTT thành công.</p>
         </div>
-        <div class="card bg-white p-5 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2 text-indigo-700">Trải nghiệm thực tế</h3>
-          <p>Nhật ký sinh viên, đi thực tập, đồ án, cảm hứng nghề nghiệp từ trải nghiệm cá nhân.</p>
+        <div class="post-card bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Đề Thi & Ôn Tập</h3>
+          <p>Tổng hợp đề thi, tài liệu ôn tập và hướng dẫn giải chi tiết cho các môn học CNTT.</p>
+        </div>
+        <div class="post-card bg-gray-50 p-6 rounded-lg shadow">
+          <h3 class="text-xl font-semibold text-blue-900 mb-3">Trải Nghiệm Sinh Viên</h3>
+          <p>Câu chuyện thực tế, kinh nghiệm học tập, và những bài học từ hành trình của một sinh viên CNTT.</p>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="mb-12">
-      <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Liên hệ</h2>
-      <p class="text-lg">📧 Email: <a href="mailto:contact@truongdevs.com" class="text-indigo-600 hover:underline">contact@truongdevs.com</a></p>
-      <p class="text-lg">🌐 Website: <a href="https://www.truongdevs.com" class="text-indigo-600 hover:underline" target="_blank">truongdevs.com</a></p>
+    <section id="links" class="py-12">
+      <h2 class="text-3xl font-semibold text-blue-900 border-b-2 border-gray-200 pb-3 mb-6">Liên Kết</h2>
+      <p class="text-lg"><strong>Blog Chính:</strong> <a href="https://truongdevs.com/" target="_blank" class="text-blue-600 hover:text-blue-800">truongdevs.com</a></p>
+      <p class="text-lg"><strong>GitHub Page:</strong> <a href="https://truongdevs.github.io/" target="_blank" class="text-blue-600 hover:text-blue-800">truongdevs.github.io</a></p>
+    </section>
+
+    <section id="contact" class="py-12">
+      <h2 class="text-3xl font-semibold text-blue-900 border-b-2 border-gray-200 pb-3 mb-6">Liên Hệ</h2>
+      <p class="text-lg"><strong>Email:</strong> <a href="mailto:contact@truongdevs.com" class="text-blue-600 hover:text-blue-800">contact@truongdevs.com</a></p>
+      <p class="text-lg"><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank" class="text-blue-600 hover:text-blue-800">+84 1234567890</a></p>
+    </section>
+
+    <section id="socials" class="py-12">
+      <h2 class="text-3xl font-semibold text-blue-900 border-b-2 border-gray-200 pb-3 mb-6">Kết Nối Với Chúng Tôi</h2>
+      <div class="flex space-x-4">
+        <a href="https://www.facebook.com/truongdevs" target="_blank" class="bg-gray-100 px-4 py-2 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white">Facebook</a>
+        <a href="https://x.com/truongdevs" target="_blank" class="bg-gray-100 px-4 py-2 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white">Twitter</a>
+        <a href="https://www.instagram.com/truongdevs/" target="_blank" class="bg-gray-100 px-4 py-2 rounded-md text-blue-600 hover:bg-blue-600 hover:text-white">Instagram</a>
+      </div>
     </section>
   </main>
 
-  <footer class="bg-indigo-600 text-white text-center py-6">
-    <p>&copy; 2025 TruongDevs – Made with 💻 by Truong</p>
+  <a href="#" class="back-to-top fixed bottom-6 right-6 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 hidden">↑</a>
+
+  <footer class="bg-blue-900 text-white text-center py-8">
+    <p>© 2025 TruongDevs | Built with Passion</p>
   </footer>
+
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.remove('hidden', 'opacity-0');
+        backToTop.classList.add('opacity-90');
+      } else {
+        backToTop.classList.add('hidden', 'opacity-0');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
